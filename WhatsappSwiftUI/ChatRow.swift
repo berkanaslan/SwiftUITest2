@@ -7,17 +7,48 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct ChatRow : View {
+    
+    var chatMessage : ChatsModel
+    var userToChatFromChatView : Users
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
-    }
+        Group{
+            if chatMessage.messageFrom == Auth.auth().currentUser!.uid && chatMessage.messageTo == userToChatFromChatView.uidFromFirebase {
+                HStack{
+                    Text(chatMessage.message)
+                        .bold()
+                        .foregroundColor(Color.black)
+                        .padding(10)
+                    Spacer()
+                }
+            } else if chatMessage.messageFrom == userToChatFromChatView.uidFromFirebase &&  chatMessage.messageTo == Auth.auth().currentUser!.uid {
+                VStack(alignment:.trailing) {
+                    HStack{
+                        Spacer()
+                        Text(chatMessage.message)
+                            .bold()
+                            .foregroundColor(Color.black)
+                            .padding(10)
+                        
+                        }
+                    }
+            }else {
+
+            }
+        
+        }.frame(width: UIScreen.main.bounds.width * 0.95)
 }
 
 #if DEBUG
 struct ChatRow_Previews : PreviewProvider {
     static var previews: some View {
-        ChatRow()
+        Group{
+            ChatRow(chatMessage: ChatsModel(id: 0, message: "test message", uidFromFirebase: "aa", messageFrom: "bb", messageTo: "cc", messageFromMe: true, messageDate: Date()), userToChatFromChatView: Users(id: 0, name: "Atil", uidFromFirebase: "aaa"))
+        }.previewLayout(.fixed(width: 300, height: 80))
     }
 }
 #endif
+}

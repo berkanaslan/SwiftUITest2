@@ -9,8 +9,19 @@
 import SwiftUI
 
 struct TestView : View {
+    @State var x = true;
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            if x {
+                Text("Hello")
+                Button(action: {
+                    self.x = false;
+                }, label: { Text("Click Me") })
+            } else {
+                Text("World")
+            }
+        }
     }
 }
 

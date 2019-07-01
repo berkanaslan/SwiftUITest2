@@ -7,17 +7,40 @@
 //
 
 import SwiftUI
+import Firebase
+import Combine
 
-struct UserStore : View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+class UserStore : BindableObject {
+    
+    let db = Firestore.firestore()
+    var userArray : [Users] = []
+    
+    var didChange = PassthroughSubject<Array<Any>, Never>()
+    
+    init() {
+        
+        db.collection("Users").addSnapshotListener { (snapshot, error) in
+            if error != nil {
+                print(error?.localizedDescription)
+            } else {
+            self.userArray.removeAll(keepingCapacity: false)
+                for document in snapshot!.documents {
+                    if let userUidFromFirebase = document.get("useruidfromfirebase") as? String {
+                        if let userName = document.get("username") as? String {
+                            let currentIndex = self.userArray.last?.id
+                            let createdUser = Users(id: (currentIndex ?? -1) + 1, name: userName, uidFromFirebase: userUidFromFirebase)
+                            self.userArray.append(createdUser)
+                        }
+                        
+                    }
+                    
+                }
+                self.didChange.send(self.userArray)
 
-#if DEBUG
-struct UserStore_Previews : PreviewProvider {
-    static var previews: some View {
-        UserStore()
+            }
+        }
+        
+
     }
+    
 }
-#endif

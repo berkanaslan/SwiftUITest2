@@ -9,15 +9,22 @@
 import SwiftUI
 
 struct UsersRow : View {
+    
+    var user : Users
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
+        HStack{
+            Text(user.name)
+        }
     }
 }
 
 #if DEBUG
 struct UsersRow_Previews : PreviewProvider {
     static var previews: some View {
-        UsersRow()
+        Group{
+            UsersRow(user: Users(id: 0, name: "Sample User", uidFromFirebase: "aaaa"))
+        }.previewLayout(.fixed(width: 300, height: 80))
     }
 }
 #endif

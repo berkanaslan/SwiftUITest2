@@ -3,27 +3,49 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		839E58B9ED70F419D731BD94 /* Pods_WhatsappSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7A41E35140A38CCFB71C2D /* Pods_WhatsappSwiftUI.framework */; };
 		FC4BA30322C5336D008DC3EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4BA30222C5336D008DC3EB /* AppDelegate.swift */; };
 		FC4BA30522C5336D008DC3EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4BA30422C5336D008DC3EB /* SceneDelegate.swift */; };
-		FC4BA30722C5336D008DC3EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4BA30622C5336D008DC3EB /* ContentView.swift */; };
+		FC4BA30722C5336D008DC3EB /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4BA30622C5336D008DC3EB /* AuthView.swift */; };
 		FC4BA30922C5336F008DC3EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC4BA30822C5336F008DC3EB /* Assets.xcassets */; };
 		FC4BA30C22C5336F008DC3EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC4BA30B22C5336F008DC3EB /* Preview Assets.xcassets */; };
 		FC4BA30F22C5336F008DC3EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC4BA30D22C5336F008DC3EB /* LaunchScreen.storyboard */; };
+		FC4BA31722C5378C008DC3EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC4BA31622C5378C008DC3EB /* GoogleService-Info.plist */; };
+		FCD2F51422C69737006C0B11 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD2F51322C69737006C0B11 /* TestView.swift */; };
+		FCD2F51622C69A27006C0B11 /* UsersRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD2F51522C69A27006C0B11 /* UsersRow.swift */; };
+		FCD2F51822C69A73006C0B11 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD2F51722C69A73006C0B11 /* Users.swift */; };
+		FCD2F51A22C7536A006C0B11 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD2F51922C7536A006C0B11 /* ChatView.swift */; };
+		FCD2F51C22C7B605006C0B11 /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD2F51B22C7B605006C0B11 /* UserStore.swift */; };
+		FCD2F54022C91218006C0B11 /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD2F53F22C91218006C0B11 /* ChatRow.swift */; };
+		FCD2F54222C914A5006C0B11 /* ChatsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD2F54122C914A5006C0B11 /* ChatsModel.swift */; };
+		FCD2F54422C91541006C0B11 /* ChatStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD2F54322C91541006C0B11 /* ChatStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E6B122AF28A12A06D28EC02 /* Pods-WhatsappSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsappSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-WhatsappSwiftUI/Pods-WhatsappSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
+		A56762F1E187505AB7651219 /* Pods-WhatsappSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsappSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-WhatsappSwiftUI/Pods-WhatsappSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
+		CD7A41E35140A38CCFB71C2D /* Pods_WhatsappSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatsappSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC4BA2FF22C5336D008DC3EB /* WhatsappSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsappSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC4BA30222C5336D008DC3EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC4BA30422C5336D008DC3EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FC4BA30622C5336D008DC3EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FC4BA30622C5336D008DC3EB /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		FC4BA30822C5336F008DC3EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC4BA30B22C5336F008DC3EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FC4BA30E22C5336F008DC3EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC4BA31022C5336F008DC3EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC4BA31622C5378C008DC3EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FCD2F51322C69737006C0B11 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		FCD2F51522C69A27006C0B11 /* UsersRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersRow.swift; sourceTree = "<group>"; };
+		FCD2F51722C69A73006C0B11 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		FCD2F51922C7536A006C0B11 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		FCD2F51B22C7B605006C0B11 /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
+		FCD2F53F22C91218006C0B11 /* ChatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRow.swift; sourceTree = "<group>"; };
+		FCD2F54122C914A5006C0B11 /* ChatsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsModel.swift; sourceTree = "<group>"; };
+		FCD2F54322C91541006C0B11 /* ChatStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +53,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				839E58B9ED70F419D731BD94 /* Pods_WhatsappSwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F8C9DFA7F1867921E5948A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E6B122AF28A12A06D28EC02 /* Pods-WhatsappSwiftUI.debug.xcconfig */,
+				A56762F1E187505AB7651219 /* Pods-WhatsappSwiftUI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EFC192AC5DFF5348996170EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD7A41E35140A38CCFB71C2D /* Pods_WhatsappSwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FC4BA2F622C5336D008DC3EB = {
 			isa = PBXGroup;
 			children = (
 				FC4BA30122C5336D008DC3EB /* WhatsappSwiftUI */,
 				FC4BA30022C5336D008DC3EB /* Products */,
+				1F8C9DFA7F1867921E5948A7 /* Pods */,
+				EFC192AC5DFF5348996170EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +100,19 @@
 			children = (
 				FC4BA30222C5336D008DC3EB /* AppDelegate.swift */,
 				FC4BA30422C5336D008DC3EB /* SceneDelegate.swift */,
-				FC4BA30622C5336D008DC3EB /* ContentView.swift */,
+				FC4BA30622C5336D008DC3EB /* AuthView.swift */,
+				FCD2F51322C69737006C0B11 /* TestView.swift */,
+				FCD2F51522C69A27006C0B11 /* UsersRow.swift */,
+				FCD2F51722C69A73006C0B11 /* Users.swift */,
+				FCD2F51B22C7B605006C0B11 /* UserStore.swift */,
+				FCD2F51922C7536A006C0B11 /* ChatView.swift */,
+				FCD2F53F22C91218006C0B11 /* ChatRow.swift */,
+				FCD2F54122C914A5006C0B11 /* ChatsModel.swift */,
+				FCD2F54322C91541006C0B11 /* ChatStore.swift */,
 				FC4BA30822C5336F008DC3EB /* Assets.xcassets */,
 				FC4BA30D22C5336F008DC3EB /* LaunchScreen.storyboard */,
 				FC4BA31022C5336F008DC3EB /* Info.plist */,
+				FC4BA31622C5378C008DC3EB /* GoogleService-Info.plist */,
 				FC4BA30A22C5336F008DC3EB /* Preview Content */,
 			);
 			path = WhatsappSwiftUI;
@@ -82,9 +133,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC4BA31322C5336F008DC3EB /* Build configuration list for PBXNativeTarget "WhatsappSwiftUI" */;
 			buildPhases = (
+				0AE87A50F748750829848E89 /* [CP] Check Pods Manifest.lock */,
 				FC4BA2FB22C5336D008DC3EB /* Sources */,
 				FC4BA2FC22C5336D008DC3EB /* Frameworks */,
 				FC4BA2FD22C5336D008DC3EB /* Resources */,
+				BD88442B8F61871F7EF85B77 /* [CP] Embed Pods Frameworks */,
+				883EF553A8471903C75E8A1D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC4BA30F22C5336F008DC3EB /* LaunchScreen.storyboard in Resources */,
+				FC4BA31722C5378C008DC3EB /* GoogleService-Info.plist in Resources */,
 				FC4BA30C22C5336F008DC3EB /* Preview Assets.xcassets in Resources */,
 				FC4BA30922C5336F008DC3EB /* Assets.xcassets in Resources */,
 			);
@@ -141,14 +196,81 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0AE87A50F748750829848E89 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WhatsappSwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		883EF553A8471903C75E8A1D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WhatsappSwiftUI/Pods-WhatsappSwiftUI-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WhatsappSwiftUI/Pods-WhatsappSwiftUI-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WhatsappSwiftUI/Pods-WhatsappSwiftUI-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD88442B8F61871F7EF85B77 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WhatsappSwiftUI/Pods-WhatsappSwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WhatsappSwiftUI/Pods-WhatsappSwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WhatsappSwiftUI/Pods-WhatsappSwiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FC4BA2FB22C5336D008DC3EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCD2F51422C69737006C0B11 /* TestView.swift in Sources */,
 				FC4BA30322C5336D008DC3EB /* AppDelegate.swift in Sources */,
 				FC4BA30522C5336D008DC3EB /* SceneDelegate.swift in Sources */,
-				FC4BA30722C5336D008DC3EB /* ContentView.swift in Sources */,
+				FC4BA30722C5336D008DC3EB /* AuthView.swift in Sources */,
+				FCD2F54422C91541006C0B11 /* ChatStore.swift in Sources */,
+				FCD2F54022C91218006C0B11 /* ChatRow.swift in Sources */,
+				FCD2F51A22C7536A006C0B11 /* ChatView.swift in Sources */,
+				FCD2F51822C69A73006C0B11 /* Users.swift in Sources */,
+				FCD2F51C22C7B605006C0B11 /* UserStore.swift in Sources */,
+				FCD2F51622C69A27006C0B11 /* UsersRow.swift in Sources */,
+				FCD2F54222C914A5006C0B11 /* ChatsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +404,7 @@
 		};
 		FC4BA31422C5336F008DC3EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E6B122AF28A12A06D28EC02 /* Pods-WhatsappSwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +425,7 @@
 		};
 		FC4BA31522C5336F008DC3EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A56762F1E187505AB7651219 /* Pods-WhatsappSwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
